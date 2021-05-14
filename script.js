@@ -3,6 +3,12 @@ function myHandler(e) {
 	document.getElementById("preloader_container").style.display = "none";
 }
 
+
+// bg color timeout
+setTimeout(function(){
+	$('#preload_bg').css('display', 'none');
+}, 3550);
+
 //NAV ANIM
 $("#collapse-button").on('click', function(e) {
 	e.preventDefault();
@@ -44,6 +50,7 @@ setTimeout(function(){
 	;
 }, 2550);
 
+//Starhover
 function starHover(){
 	$('#starpulse').transition('pulse');
 };
