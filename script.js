@@ -8,6 +8,7 @@ setTimeout(function(){
 	$('#preload_bg').css('display', 'none');
 }, 4000);
 
+
 // Navbar sticky
 var prevScrollpos = window.pageYOffset;
 window.addEventListener('scroll', function() {

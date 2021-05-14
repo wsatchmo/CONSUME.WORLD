@@ -76,7 +76,7 @@ window.onload = function () {
     }
   }
 
-  console.log(JSON.stringify(config, null, 2));
+  // console.log(JSON.stringify(config, null, 2));
 
   var canvas = document.getElementById('starry-night');
 
@@ -91,24 +91,24 @@ window.onload = function () {
 
     window.onresize = view.resize;
 
-    var gui = new StarryNightGui(model, config);
+    // var gui = new StarryNightGui(model, config);
 
-    gui.onResetConfig = function () {
-      document.location.hash = '';
-      document.location.reload();
-    };
+    // gui.onResetConfig = function () {
+    //   document.location.hash = '';
+    //   document.location.reload();
+    // };
 
-    gui.onShareConfig = function () {
-      document.location.hash = encodeConfig(config);
-    };
+    // gui.onShareConfig = function () {
+    //   document.location.hash = encodeConfig(config);
+    // };
 
-    gui.onPixelRatioChange = function () {
-      view.resize();
-    };
+    // gui.onPixelRatioChange = function () {
+    //   view.resize();
+    // };
 
-    var stats = new StarryNightStats(model, statsContainer);
+    // var stats = new StarryNightStats(model, statsContainer);
 
-    controller.onBeginRender = stats.begin;
-    controller.onEndRender = stats.end;
+    // controller.onBeginRender = stats.begin;
+    // controller.onEndRender = stats.end;
   };
 };
