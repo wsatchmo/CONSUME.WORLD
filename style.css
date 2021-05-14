@@ -1,0 +1,263 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+#unison_box{
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  top: -60px;
+}
+
+#preloader_container{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  mix-blend-mode: darken;
+}
+
+#preloader{
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+@media (max-width: 800px) {
+  #info {
+    margin: 0;
+    width: 640px;
+  }
+  #container {
+    margin: 0;
+    width: 640px;
+    height: 289px;
+  }
+  #unison_box{
+    top: 15px;
+    height: 40%;
+  }
+}
+#starry-night {
+  width: 100%;
+  height: 100%;
+  animation: fadeIn 3.7s;
+  -webkit-animation: fadeIn 3.7s;
+  -moz-animation: fadeIn 3.7s;
+  -o-animation: fadeIn 3.7s;
+  -ms-animation: fadeIn 3.7s;
+  z-index: 10;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+#stargif{
+  animation: fadeGif 8s, rotation 120s infinite linear;
+  -webkit-animation: fadeGif 8s, rotation 120s infinite linear;
+  -moz-animation: fadeGif 8s, rotation 120s infinite linear;
+  -o-animation: fadeGif 8s, rotation 120s infinite linear;
+  -ms-animation: fadeGif 8s, rotation 120s infinite linear;
+  position: absolute;
+  right: 31.3%;
+  height: auto;
+  width: 9%;
+  z-index: 1;
+  transform: rotate(-52deg);
+  opacity: .45;
+  -webkit-filter: grayscale(100%) invert(1); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%) invert(1) blur(.08vw);
+  mix-blend-mode: multiply;
+}
+@keyframes fadeGif {
+  0% {opacity:0;}
+  100% {opacity:.45;}
+}
+
+@-moz-keyframes fadeGif {
+  0% {opacity:0;}
+  100% {opacity:.45;}
+}
+
+@-webkit-keyframes fadeGif {
+  0% {opacity:0;}
+  100% {opacity:.45;}
+}
+
+@-o-keyframes fadeGif {
+  0% {opacity:0;}
+  100% {opacity:.45;}
+}
+
+@-ms-keyframes fadeGif {
+  0% {opacity:0;}
+  100% {opacity:.45;}
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+#infoboxes{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 60px;
+}
+@media (min-width: 800px) {
+  #infoboxes{
+    top: -50px;
+    position: relative;
+  }
+}
+.infobox{
+  visibility: hidden;
+}
+
+/* #stargif2{
+  animation: fadeGif 12s;
+  -webkit-animation: fadeGif 12s;
+  -moz-animation: fadeGif 12s;
+  -o-animation: fadeGif 12s;
+  -ms-animation: fadeGif 12s;
+  position: absolute;
+  right: 28.5%;
+  height: auto;
+  width: 15%;
+  z-index: 0;
+
+  opacity: .22;
+  -webkit-filter: grayscale(100%) invert(1) blur(3px); 
+  filter: grayscale(100%) invert(1);
+  mix-blend-mode: multiply;
+}
+@keyframes fadeGif {
+  0% {opacity:0;}
+  100% {opacity:.22;}
+}
+
+@-moz-keyframes fadeGif {
+  0% {opacity:0;}
+  100% {opacity:.22;}
+}
+
+@-webkit-keyframes fadeGif {
+  0% {opacity:0;}
+  100% {opacity:.22;}
+}
+
+@-o-keyframes fadeGif {
+  0% {opacity:0;}
+  100% {opacity:.22;}
+}
+
+@-ms-keyframes fadeGif {
+  0% {opacity:0;}
+  100% {opacity:.22;}
+} 
+*/
+
+#name{
+  cursor: default;
+}
+
+.ui.navbar {
+  margin-top: 0px !important;
+  width: 100%;
+}
+
+.padding-reset{
+padding: 0px !important;
+}
+
+.ui.message{
+padding: 41px !important;
+}
+
+@media (max-width: 767px) {
+  #mini-nav{
+        border-radius: 0%;
+        margin-bottom: 0%;
+        height: 60px;
+}
+}
+
+@media (max-width: 360px) {
+  #logo-satchmo{
+      height: 25px;
+      width: auto;
+  }
+  #nav-collapsed{
+      max-width: 47%;
+  }
+}
+
+.ui.vertical.menu{
+  margin-top: -15px !important;
+  width: 100%;
+  position: absolute;
+  display: none;
+  z-index: 15;
+  top: 89px;
+  right: 0px;
+} 
+
+/* FOOTER */
+.footer{
+  position: fixed;
+  width: 100%;
+  z-index: 55;
+  bottom: 0;
+  height: 50px;
+  padding: 0%;
+}
+
+#foot{
+  padding: 0%;
+  background-color: #1b1c1d;
+}
+
+.footlink{
+  color: rgb(146, 146, 146);
+  padding-bottom: 2%;
+}
+.footlink:hover{
+  color: rgb(131, 75, 205);
+}
+/* END FOOTER */
