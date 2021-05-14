@@ -80,6 +80,7 @@ html{
   }
   #container {
     margin: 0;
+    animation: fadeIn 3.7s;
     width: 640px;
     height: 289px;
   }
@@ -91,7 +92,6 @@ html{
 #starry-night {
   width: 100%;
   height: 100%;
-  animation: fadeIn 3.7s;
   z-index: 10;
 }
 @keyframes fadeIn {
