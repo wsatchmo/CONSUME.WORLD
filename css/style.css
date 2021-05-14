@@ -29,6 +29,7 @@ body {
 #container {
   width: 100%;
   height: 100%;
+  animation: fadeIn 3.7s;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,7 +53,6 @@ body {
 #starry-night {
   width: 100%;
   height: 100%;
-  animation: fadeIn 3.7s;
   -webkit-animation: fadeIn 3.7s;
   -moz-animation: fadeIn 3.7s;
   -o-animation: fadeIn 3.7s;
