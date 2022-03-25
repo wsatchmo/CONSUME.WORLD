@@ -1,25 +1,18 @@
 html{
   scroll-behavior: smooth;
 }
-
-#navgott{
-  transition: top 0.3s;
-  animation: fadeIn 4.6s ease-in-out;
-}
-
 #preloader_container{
   width: 100%;
   height: 100%;
   position: fixed;
   mix-blend-mode: darken;
 }
-
 #preloader{
   width: 100%;
   height: 100%;
   object-fit: cover; 
 }
-
+/* STARS & LOGO */
 #unison_box{
   height: 75%;
   display: flex;
@@ -28,6 +21,12 @@ html{
   margin-left: 5%;
   margin-right: 5%;
   top: -60px;
+}
+@media (min-width: 1500px) {
+  #unison_box{
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 #container {
@@ -58,73 +57,47 @@ html{
   width: 100%;
   height: 100%;
   animation: fadeIn 3.7s;
-  z-index: 10;
+  z-index: 99;
+  pointer-events: none;
 }
 @keyframes fadeIn {
   0% {opacity:0;}
   100% {opacity:1;}
 }
-
 @-moz-keyframes fadeIn {
   0% {opacity:0;}
   100% {opacity:1;}
 }
-
 @-webkit-keyframes fadeIn {
   0% {opacity:0;}
   100% {opacity:1;}
 }
-
 @-o-keyframes fadeIn {
   0% {opacity:0;}
   100% {opacity:1;}
 }
-
 @-ms-keyframes fadeIn {
   0% {opacity:0;}
   100% {opacity:1;}
 }
-
+/* STAR GIF CSS & KEYFRAMES */
 #stargif{
-  animation: fadeGif 8s, rotation 120s infinite linear;
-  -webkit-animation: fadeGif 8s, rotation 120s infinite linear;
-  -moz-animation: fadeGif 8s, rotation 120s infinite linear;
-  -o-animation: fadeGif 8s, rotation 120s infinite linear;
-  -ms-animation: fadeGif 8s, rotation 120s infinite linear;
+  opacity: .25;
+  animation:  rotation 120s infinite linear;
+  -webkit-animation:  rotation 120s infinite linear;
+  -moz-animation:  rotation 120s infinite linear;
+  -o-animation:  rotation 120s infinite linear;
+  -ms-animation:  rotation 120s infinite linear;
   position: absolute;
-  right: 31.3%;
   height: auto;
-  width: 9%;
+  margin-bottom: 16.1%;
+  right: 56.2%;
+  width: 5.3%;
   z-index: 1;
   transform: rotate(-52deg);
-  opacity: .45;
   -webkit-filter: grayscale(100%) invert(1); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%) invert(1) blur(.08vw);
   mix-blend-mode: multiply;
-}
-@keyframes fadeGif {
-  0% {opacity:0;}
-  100% {opacity:.45;}
-}
-
-@-moz-keyframes fadeGif {
-  0% {opacity:0;}
-  100% {opacity:.45;}
-}
-
-@-webkit-keyframes fadeGif {
-  0% {opacity:0;}
-  100% {opacity:.45;}
-}
-
-@-o-keyframes fadeGif {
-  0% {opacity:0;}
-  100% {opacity:.45;}
-}
-
-@-ms-keyframes fadeGif {
-  0% {opacity:0;}
-  100% {opacity:.45;}
 }
 
 @keyframes rotation {
@@ -135,6 +108,52 @@ html{
     transform: rotate(359deg);
   }
 }
+
+.clickbox{
+  position: absolute;
+  height: 32vw;
+  width: 24%;
+  right: 22%;
+  z-index: 100;
+}
+@media (min-width: 1500px) {
+  .clickbox{
+    height: 77%;
+  }
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+.clickbox:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
 
 #infoboxes{
   margin-left: 5%;
@@ -150,49 +169,27 @@ html{
 .infobox{
   visibility: hidden;
 }
-
-/* #stargif2{
-  animation: fadeGif 12s;
-  -webkit-animation: fadeGif 12s;
-  -moz-animation: fadeGif 12s;
-  -o-animation: fadeGif 12s;
-  -ms-animation: fadeGif 12s;
+/* 
+#urge{
   position: absolute;
-  right: 28.5%;
   height: auto;
   width: 15%;
-  z-index: 0;
-
-  opacity: .22;
-  -webkit-filter: grayscale(100%) invert(1) blur(3px); 
-  filter: grayscale(100%) invert(1);
-  mix-blend-mode: multiply;
+  bottom: -12px;
+  z-index: 50;
 }
-@keyframes fadeGif {
-  0% {opacity:0;}
-  100% {opacity:.22;}
-}
+@media (max-width: 800px) {
+  #urge{
+    bottom: -6px;
+    width: 20vw;
+  }
+} */
 
-@-moz-keyframes fadeGif {
-  0% {opacity:0;}
-  100% {opacity:.22;}
-}
 
-@-webkit-keyframes fadeGif {
-  0% {opacity:0;}
-  100% {opacity:.22;}
+/* NAV STUFF */
+#navgott{
+  transition: top 0.3s;
+  animation: fadeIn 4.6s ease-in-out;
 }
-
-@-o-keyframes fadeGif {
-  0% {opacity:0;}
-  100% {opacity:.22;}
-}
-
-@-ms-keyframes fadeGif {
-  0% {opacity:0;}
-  100% {opacity:.22;}
-} 
-*/
 
 #name{
   cursor: default;
@@ -217,6 +214,14 @@ padding: 41px !important;
         margin-bottom: 0%;
         height: 60px;
 }
+  #starry-night{
+        width: 100%;
+        margin: 0px;
+  }
+  #unison_box{
+        width: 100%;
+        margin: 0px;
+  }
 }
 
 @media (max-width: 360px) {

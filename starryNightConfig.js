@@ -6,7 +6,7 @@ function StarryNightConfig() {
       "target": 30
     },
     "logo": {
-      "scale": 0.6681539682539683
+      "scale": 0.7681539682539683
     },
     "sparkles": {
       "enabled": true,

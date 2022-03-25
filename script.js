@@ -1,19 +1,13 @@
 document.getElementById('preloader').addEventListener('ended',myHandler,false);
 function myHandler(e) {
 	document.getElementById("preloader_container").style.display = "none";
-}
-
-// bg color timeout (in case it remains)
-setTimeout(function(){
-	$('#preload_bg').css('display', 'none');
-}, 4000);
-
+} //P-P-P-Preloader
 
 // Navbar sticky
 var prevScrollpos = window.pageYOffset;
 window.addEventListener('scroll', function() {
-	console.log("Hello, I'm gay actor Michael Douglas, and the Navbar moved." 
-		+	"It sucks, but it's sexy.")
+	// console.log("Hello, I'm gay actor Michael Douglas, and the Navbar moved." 
+	// 	+	"It sucks, but it's sexy.")
 	var currentScrollPos = window.pageYOffset;
 	if (prevScrollpos > currentScrollPos) {
 		document.getElementById("navgott").style.top = "0";
@@ -25,12 +19,12 @@ window.addEventListener('scroll', function() {
 
 //NAV ANIM
 $("#collapse-button").on('click', function(e) {
-	console.log("Nav, mommy - thanks jeans!")
+	// console.log("Nav, mommy - thanks jeans!")
 	e.preventDefault();
 	$(".navbar-burger").toggleClass("is-active");
 	$('#nav-collapsed').transition('slide down');
 });
-
+//DROPDOWN
 $('.ui.dropdown').dropdown();
 
 // RESIZE FLICKER REDUCE
@@ -64,11 +58,23 @@ setTimeout(function(){
 		.transition('fade up')
 	;
 }, 2550);
+setTimeout(function(){
+	$('#urge')
+		.transition('fade down')
+	;
+}, 3350);
+setInterval(function(){
+	$('#urge')
+		.transition('bounce')
+	;
+}, 6350);
 
 //Starhover
 function starHover(){
-	$('#starpulse').transition('pulse');
+	$('.starpulse').transition('pulse');
 };
 
+
+
 // Year for footer
-// document.getElementById("year").innerHTML = new Date().getFullYear();
+document.getElementById("year").innerHTML = new Date().getFullYear();

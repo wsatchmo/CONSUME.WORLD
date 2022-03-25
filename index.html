@@ -4,14 +4,14 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>SEEK & BE SOUGHT</title>
+	<title>Book 1 Out Now!</title>
 	<meta name="description" content="UNISON Book">
-    <meta name="keywords" content="Book Author Fantasy Scifi Science Fiction History  books bookstagram book 
+    <meta name="keywords" content="Book Author Fantasy Scifi Science Fiction History writing write books bookstagram book 
 	booklover reading bookworm bookstagrammer bookish read booknerd bookaddict bibliophile booksofinstagram 
 	instabook love bookaholic bookshelf booksbooksbooks libros readersofinstagram bookphotography reader b 
 	booklove instabooks art libri literature author bhfyp  Design Art Artstation Github Illustration Skill Work">
     <meta name="author" content="Unison">
-	<link rel="shortcut icon" href="./favicon.ico">
+	<link rel="shortcut icon" href="./images/favicon.ico">
 	<link rel="stylesheet" href="style.css">
 	<!-- Animate.css Styling
 	<link rel="stylesheet" type="text/css" href="./assets/css/animate.css">  -->
@@ -29,7 +29,7 @@
 	<!-- UNISΩN PRELOADER -->
 	<div id="preloader_container" style="z-index: 100;">
 		<video id="preloader" preload="auto" autoplay muted>
-			<source src="unisonwbg.mp4" type="video/mp4"/>
+			<source src="images/unisonwbg.mp4" type="video/mp4"/>
 		</video>
 	</div>
 <!--  -------------------------------------------------------------------------------
@@ -43,31 +43,29 @@ __                            __         ___            __    __
 | $$ \$$    $$ \$$    $$ \$$    $$       \$$  \$$\      | $$  \$$$ \$$    $$   \$$$   
 \$$  \$$$$$$   \$$$$$$$  \$$$$$$$        \$$$$ $$       \$$   \$$  \$$$$$$$    \$  
 ---------------------------------------------------------------------------------- -->
-	 <!-- NAV -->
-	 <div  class="ui page grid" style="width: 100%; padding: 0%; border-radius: 0%;">
+	<!-- NAV -->
+	<div  class="ui page grid" style="width: 100%; padding: 0%; border-radius: 0%;">
         <div class="computer tablet only row">
             <div id="navgott" class="ui inverted menu navbar" style="border-radius: 0%; height: 60px; width: 100%;">
-                <a id="name" class="brand item"><strong>UNISON</strong></a>
-                <a class="item modal-open" data-target="#about-modal">SEEK</a>
+                <a id="name" onmouseenter="starHover()" class="brand item"><img class="ui starpulse middle aligned mini spaced image" src="images/star.png" alt="UNISON"></a>
                 <a class="ui dropdown inverted item">CONSUME
                     <i class="dropdown icon"></i>
                     <div class="menu">
-                        <div class="item" style="padding-right: .8em !important; padding-left: .8em !important;" onClick="parent.open('###')">AMAZON</div>
-                        <div class="item" style="padding-right: .8em !important; padding-left: .8em !important;" onClick="parent.open('###')">GOOGLE</div>
-                        <div class="item" style="padding-right: .8em !important; padding-left: .8em !important;" onClick="parent.open('###')">ORDER</div>
+                        <div class="item" style="padding-right: .8em !important; padding-left: .8em !important;" onClick="parent.open('https://www.amazon.com/B09W89YBLZ')">AMAZON</div>
+                        <!--  <div class="item" style="padding-right: .8em !important; padding-left: .8em !important;" onClick="parent.open('###')">GOOGLE</div> -->
+                        <div class="item" style="padding-right: .8em !important; padding-left: .8em !important;" onClick="parent.open('mailto:unisonbooks@gmail.com?subject=Order Request&body=Hello, I am interested in purchasing a copy of Awakening of the Longlost in hard or softcover format.')">ORDER</div>
                         <div class="ui divider"></div>
-                        <div class="item" style="padding-right: .8em !important; padding-left: .8em !important;" onClick="parent.open('###')">CHAOS</div>
-                        <div class="item" style="padding-right: .8em !important; padding-left: .8em !important;" onClick="parent.open('###')">ALETHEIA</div>
+                        <div class="item" style="padding-right: .8em !important; padding-left: .8em !important;" onClick="parent.open('https://www.kumu.io/wsatcher/unison')">ALETHEIA</div>
                     </div>
                 </a>
+				<a class="item modal-open" data-target="#about-modal">WORLD</a>
             </div>
         </div>
         <!-- MOBILE ONLY -->
         <div class="mobile only narrow row">
             <div id="mini-nav" class="ui inverted navbar menu" style="width: 100%;">
-                <a class="brand item">UNISON</a>
                 <a id="logo-box" class="item modal-open" onmouseenter="starHover()" data-target="#about-modal">
-                    <img id="starpulse" class="ui middle aligned mini spaced image" src="star.png" alt="UNISON">
+                    <img class="ui starpulse middle aligned mini spaced image" src="images/star.png" alt="UNISON">
                 </a>
                 <div class="right menu open">
                     <a id="collapse-button" href="" class="menu item navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" style="height: 100%;">
@@ -79,16 +77,15 @@ __                            __         ___            __    __
             </div>
             <!-- COLLAPSE NAVBAR -->
             <div id="nav-collapsed" class="ui vertical inverted navbar menu transition hidden" style="border-radius: 0%;">
-                <a href="https://github.com/wsatchmo" target="_blank" class="item">SEEK</a>
 				<div class="ui item">
                     <div class="text">CONSUME</div>
                     <div class="menu">
-                        <a href="#" target="_blank" class="item">Amazon</a>  <!-- Glitch w/ Winograd -->
-                        <a href="#" target="_blank" class="item">Google</a>  <!-- Glitch w/ OPLEX -->
-                        <a href="#" target="_blank" class="item">Order</a>   <!-- Glitch w/ Anoninem -->
-                      </div>
+                        <a href="https://www.amazon.com/B09W89YBLZ" target="_blank" class="item">Amazon</a>  <!-- Glitch w/ Winograd -->
+                       <!--     <a href="#" target="_blank" class="item">Google</a>   Glitch w/ OPLEX -->
+                        <a href="mailto:unisonbooks@gmail.com?subject=Order Request&body=Hello, I am interested in purchasing a copy of Awakening of the Longlost in hard or softcover format." class="item">Order</a>   <!-- Glitch w/ Anoninem -->
+                    </div>
+					<a href="https://github.com/wsatchmo" target="_blank" class="item">WORLD</a>
                 </div>
-                <a href="###" target="_blank" class="item">Chaos</a>
             </div>
         </div>
     </div>
@@ -105,129 +102,82 @@ We [human.machine] would do well to know our place; see as it is. -->
 	<div id="unison_box" class="container">
 		<div id="container">
 			<canvas id="starry-night" alt="UNISON"></canvas>
-			<img id="stargif" src="starbeaut.gif" alt="star GIF" width="100%">
+			<img id="stargif" src="images/starbeaut.gif" alt="star GIF" width="100%">
 			<!-- <img id="stargif2" src="stars.gif" alt="star GIF" width="100%"> -->
 		</div>
+		<!-- <img id="urge" src="images/Ordernow.png" alt="Order" width="100%"> -->
+		<a class="clickbox" alt="Book Preview" href="http://www.amazon.com/B09W89YBLZ?asin=B09W89YBLZ&revisionId=f3bc30d8&format=1&depth=1" target="_blank">
+			<span class="tooltiptext">Preview on Amazon</span>
+		</a>
 	</div>
 	<!--  ----------- CARD ONE ---------- -->
 	<div id="infoboxes" class="columns">
 		<div id="card1" class="column infobox">
 			<div class="box">
-				<article class="media">
-					<div class="media-left">
-						<figure class="image is-64x64">
-						<img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
-						</figure>
-					</div>
-					<div class="media-content">
-						<div class="content">
-						<p>
-							<strong>Buy Sense</strong> <small>Kindle Google Apple</small>
-							<br>
-							Digital copies include all artwork featured in the book
-						</p>
+				<a href="https://instagram.com/unisonbook" style="color: black;" alt="Instagram" target="_blank">
+					<article class="media">
+						<div class="media-left">
+							<figure class="image is-64x64">
+								<img src="images/ig.png" alt="Image">
+							</figure>
 						</div>
-						<nav class="level is-mobile">
-						<div class="level-left">
-							<a class="level-item" aria-label="reply">
-							<span class="icon is-small">
-								<i class="fas fa-reply" aria-hidden="true"></i>
-							</span>
-							</a>
-							<a class="level-item" aria-label="retweet">
-							<span class="icon is-small">
-								<i class="fas fa-retweet" aria-hidden="true"></i>
-							</span>
-							</a>
-							<a class="level-item" aria-label="like">
-							<span class="icon is-small">
-								<i class="fas fa-heart" aria-hidden="true"></i>
-							</span>
-							</a>
+						<div class="media-content">
+							<div class="content">
+								<p>
+									<strong>Instagram</strong> <small>Like & Follow</small>
+									<br>
+									Follow us for regular news, updates, art and extras
+								</p>
+							</div>
 						</div>
-						</nav>
-					</div>
-				</article>
+					</article>
+				</a>
 			</div>
 		</div>
 		<!--  ----------- CARD TWO ---------- -->
 		<div id="card2" class="column infobox">
 			<div class="box">
-				<article class="media">
-				<div class="media-left">
-					<figure class="image is-64x64">
-					<img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
-					</figure>
-				</div>
-				<div class="media-content">
-					<div class="content">
-					<p>
-						<strong>Buy Truth</strong> <small>Direct  Wordery  Amazon</small>
-						<br>
-						Physical copes are available in hard and softcover variations
-					</p>
-					</div>
-					<nav class="level is-mobile">
-					<div class="level-left">
-						<a class="level-item" aria-label="reply">
-						<span class="icon is-small">
-							<i class="fas fa-reply" aria-hidden="true"></i>
-						</span>
-						</a>
-						<a class="level-item" aria-label="retweet">
-						<span class="icon is-small">
-							<i class="fas fa-retweet" aria-hidden="true"></i>
-						</span>
-						</a>
-						<a class="level-item" aria-label="like">
-						<span class="icon is-small">
-							<i class="fas fa-heart" aria-hidden="true"></i>
-						</span>
-						</a>
-					</div>
-					</nav>
-				</div>
-				</article>
+				<a href="https://www.amazon.com/B09W89YBLZ" target="_blank" alt="Order">
+					<article class="media">
+						<div class="media-left">
+							<figure class="image is-64x64">
+								<img src="images/kindle.png" alt="Image">
+							</figure>
+						</div>
+						<div class="media-content">
+							<div class="content">
+							<p>
+								<strong>Order Now</strong> <small>eBook & Softcover</small>
+								<br>
+								Available on Amazon, Kindle, or by direct order
+							</p>
+							</div>
+						</div>
+					</article>
+				</a>
 			</div>
 		</div>
 		<!--  ----------- CARD THREE ---------- -->
 		<div id="card3" class="column infobox">
 			<div class="box">
-				<article class="media">
-					<div class="media-left">
-						<figure class="image is-64x64">
-						<img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
-						</figure>
-					</div>
-					<div class="media-content">
-						<div class="content">
-						<p>
-							<strong>Buy Meaning</strong> <small>175 Page Artbook</small>
-							<br>
-							Artbooks are available in standard and premium variations
-						</p>
+				<a href="https://www.artstation.com/wsatcher/prints" style="color: black;" target="_blank" alt="Prints">
+					<article class="media">
+						<div class="media-left">
+							<figure class="image is-64x64">
+								<img src="images/artst.png" alt="Image">
+							</figure>
 						</div>
-						<nav class="level is-mobile">
-						<div class="level-left">
-							<a class="level-item" aria-label="reply">
-							<span class="icon is-small">
-								<i class="fas fa-reply" aria-hidden="true"></i>
-							</span>
-							</a>
-							<a class="level-item" aria-label="retweet">
-							<span class="icon is-small">
-								<i class="fas fa-retweet" aria-hidden="true"></i>
-							</span>
-							</a>
-							<a class="level-item" aria-label="like">
-							<span class="icon is-small">
-								<i class="fas fa-heart" aria-hidden="true"></i>
-							</span>
-							</a>
+						<div class="media-content">
+							<div class="content">
+								<p>
+									<strong>AotLL Merch</strong> <small>Prints & Posters</small>
+									<br>
+									Official posters, canvas and metal prints on Artstation
+								</p>
+							</div>
 						</div>
-						</nav>
-					</div>
-				</article>
+					</article>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -239,21 +189,59 @@ ______ _____  _____ _____ ___________ 	the self is an illusion
 | |   \ \_/ /\ \_/ / | | | |___| |\ \   ----------unused | wo/man
 \_|    \___/  \___/  \_/ \____/\_| \_|	[] is an illusion of the mind
 ---------- REMOVED FOR NOW  ---------- -->
-	<!-- FOOTER   
+	<!-- FOOTER   -->
 	<footer class="footer" id="foot">
 		<div class="container is-fluid" >
 			<div class="content has-text-centered" style="margin-bottom: 5px;">
 				<p style="margin-top: 10px;">
-					<a class="footlink" href="#" target="_blank">&#x00A9 Unison Book <span id="year"></span></a>
+					<a class="footlink" href="#" target="_blank">&#x00A9 <span id="year"></span></a>
+					<i class="fas fa-book-open" style="color: #666;"></i>
 					<i class="fas fa-cog fa-spin" style="color: #666;"></i>
 				</p>
 			</div>
 		</div>
-	</footer> -->
+	</footer> 
+
+<!--                          __            __            
+	                         |  \          |  \          
+______ ____    ______    ____| $$  ______  | $$  _______ 
+|      \    \  /      \  /      $$ |      \ | $$ /       \
+| $$$$$$\$$$$\|  $$$$$$\|  $$$$$$$  \$$$$$$\| $$|  $$$$$$$
+| $$ | $$ | $$| $$  | $$| $$  | $$ /      $$| $$ \$$    \ 
+| $$ | $$ | $$| $$__/ $$| $$__| $$|  $$$$$$$| $$ _\$$$$$$\
+| $$ | $$ | $$ \$$    $$ \$$    $$ \$$    $$| $$|       $$
+\$$  \$$  \$$  \$$$$$$   \$$$$$$$  \$$$$$$$ \$$ \$$$$$$$ -->
+<!-- MODALS -->
+<!-- ABOUT -->
+<div id="about-modal" class="modal animated fadeIn">
+	<div class="modal-background"></div>
+	<div class="card" id="modal-content" style="margin: 3%;">
+		<div class="card-content">
+			<div class="media">
+				<div class="media-left">
+					<figure class="image is-96x96">
+						<img src="images/starbeaut.gif" style="filter: hue-rotate(0.5turn); mix-blend-mode: difference;" alt="Star">
+					</figure>
+				</div>
+				<div class="media-content">
+					<p class="title is-8 sel" style="margin-top: 2.5vw;">
+					Coming Soon
+					</p>
+					<p class="subtitle sel">World View Timeline, Map, Lore, & more</p>
+				</div>
+			</div>
+			<div class="content sel" style="font-size: 15px;">
+			The World View section is still under construction. When finished, the link between Earth and Ygroth may at last become clear... 
+			</div>
+		</div>
+	</div>
+	<button class="modal-close is-large" aria-label="close"></button>
+</div>
+
 <!-- __    ___   __   _____  ___  _____ 
 	/ _\  / __\ /__\  \_   \/ _ \/__   \ 
-	\ \  / /   / \//   / /\/ /_)/  / /\/
-	_\ \/ /___/ _  \/\/ /_/ ___/  / /   
+	\ \  / /   / \//   / /\/ /_)/  / /\/    - penis
+	_\ \/ /___/ _  \/\/ /_/ ___/  / /   	- kek
 	\__/\____/\/ \_/\____/\/      \/   
 -->
 	<!-- jQuery -->
@@ -270,9 +258,27 @@ ______ _____  _____ _____ ___________ 	the self is an illusion
 	<script src="script.js" type='text/javascript'></script>
 	<!-- <script type="text/javascript" src="./assets/js/animejs/lib/anime.min.js"></script>
     <script type="text/javascript" src="./assets/js/pop.js"></script> -->
+	    <!-- MODALS -->
+		<script>
+			$(".modal-open").click(function() {
+				var target = $(this).data("target");
+				console.log(target);
+				$("html").addClass("is-clipped");
+				$(target).addClass("is-active");
+			});
+	
+			$(".modal-close").click(function() {
+				$("html").removeClass("is-clipped");
+				$(this).parent().removeClass("is-active");
+			});
+	
+			$(".modal-background").click(function() {
+				$("html").removeClass("is-clipped");
+				$(this).parent().removeClass("is-active");
+			});
+		</script>
 </body>	
 </html>
-
 <!-- [ belief knowledge truth understanding sight light love happiness pain fear 
 				everythingthatyouevercanendeverwillknowisanillusion
 		id ego superego religion faith science technology law humanity history
@@ -282,4 +288,14 @@ ______ _____  _____ _____ ___________ 	the self is an illusion
 		death death death death death comesforusall death life death death death
 				mortalityisbeautywearealltiedtogetherbyityouandiareone
 		life life life life life theyareequal;wewillbetoo in the end. death. life 
+-->
+
+<!--  Storp, Chorley! This gaem has gone on loeng enough.
+		Denim Chicken?
+		I was going by Trundle the Great
+		No, you were trying to write Charlie
+		If here by now then bad place be - troubled time for you when heat comes.
+		   . . .  Jesus. the kid's an idiot.
+		Rude man who shushes, please call.
+
 -->

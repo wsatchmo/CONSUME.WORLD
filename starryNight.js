@@ -82,7 +82,7 @@ window.onload = function () {
 
 
   var logo = new Image();
-  logo.src = 'unison.svg';
+  logo.src = 'images/book_1.svg';
 
   logo.onload = function () {
     var model = new StarryNightModel(config);
