@@ -191,6 +191,10 @@ html{
   animation: fadeIn 4.6s ease-in-out;
 }
 
+#nav-collapsed{
+  z-index: 101;
+}
+
 #name{
   cursor: default;
 }
