@@ -80,25 +80,6 @@ html{
   0% {opacity:0;}
   100% {opacity:1;}
 }
-/* STAR GIF CSS & KEYFRAMES */
-#stargif{
-  opacity: .25;
-  animation:  rotation 120s infinite linear;
-  -webkit-animation:  rotation 120s infinite linear;
-  -moz-animation:  rotation 120s infinite linear;
-  -o-animation:  rotation 120s infinite linear;
-  -ms-animation:  rotation 120s infinite linear;
-  position: absolute;
-  height: auto;
-  margin-bottom: 19.7%;
-  right: 57.4%;
-  width: 5.3%;
-  z-index: 1;
-  transform: rotate(-52deg);
-  -webkit-filter: grayscale(100%) invert(1); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%) invert(1) blur(.08vw);
-  mix-blend-mode: multiply;
-}
 
 @keyframes rotation {
   from {

@@ -9,8 +9,8 @@ function StarryNightConfig() {
       "scale": 0.7681539682539683
     },
     "sparkles": {
-      "enabled": true,
-      "frequency": 1,
+      "enabled": false,
+      "frequency": 10,
       "age": 500,
       "width": 2.1746031746031744,
       "height": 4.291005291005291,
@@ -20,11 +20,11 @@ function StarryNightConfig() {
     },
     "meteors": {
       "enabled": true,
-      "frequency": .8,
-      "angle": 0.44,
-      "age": 500,
-      "length": 0.75,
-      "thickness": 0.3607407407407408
+      "frequency": 38.8,
+      "angle": 0.34,
+      "age": 800,
+      "length": 0.25,
+      "thickness": 0.1607407407407408
     },
     "radialDots": {
       "minRadius": 0.26455026455026454,
@@ -38,7 +38,7 @@ function StarryNightConfig() {
       "enabled": true,
       "perspective": 1.5999999999999996,
       "speed": -0.1749095295536791,
-      "dotCount": 100,
+      "dotCount": 30,
       "minDistance": 0.5890056867137687,
       "maxDistance": 0.95,
       "tapering": 0.14785455798724798
@@ -71,7 +71,7 @@ function StarryNightConfig() {
         "tapering": 0.2
       },
       {
-        "enabled": true,
+        "enabled": false,
         "speed": 1.1837847519999998,
         "horizPos": 0.13,
         "vertPos": 0.5448905738411166,

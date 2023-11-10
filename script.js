@@ -59,6 +59,11 @@ setTimeout(function(){
 	;
 }, 2550);
 setTimeout(function(){
+	$('#card4')
+		.transition('fade up')
+	;
+}, 3050);
+setTimeout(function(){
 	$('#urge')
 		.transition('fade down')
 	;
