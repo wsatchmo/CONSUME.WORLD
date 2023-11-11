@@ -51,28 +51,29 @@ setTimeout(function(){
 	$('#card2')
 		.transition('fade up')
 	;
-}, 1950);
+}, 2950);
 // FADEINS
 setTimeout(function(){
 	$('#card3')
 		.transition('fade up')
 	;
-}, 2550);
+}, 3550);
+// FADEINS
 setTimeout(function(){
 	$('#card4')
 		.transition('fade up')
 	;
-}, 3050);
-setTimeout(function(){
-	$('#urge')
-		.transition('fade down')
-	;
-}, 3350);
-setInterval(function(){
-	$('#urge')
-		.transition('bounce')
-	;
-}, 6350);
+}, 4050);
+// setTimeout(function(){
+// 	$('#urge')
+// 		.transition('fade down')
+// 	;
+// }, 3350);
+// setInterval(function(){
+// 	$('#urge')
+// 		.transition('bounce')
+// 	;
+// }, 6350);
 
 //Starhover
 function starHover(){
