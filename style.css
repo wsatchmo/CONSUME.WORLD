@@ -42,6 +42,14 @@ html{
   justify-content: center;
   align-items: center;
   position: relative;
+  --mask: linear-gradient(to bottom, 
+      rgba(0,0,0, 1) 0,   rgba(0,0,0, 1) 80%, 
+      rgba(0,0,0, 0) 95%, rgba(0,0,0, 0) 0
+  ) 100% 50% / 100% 100% repeat-x;
+  
+  -webkit-mask: var(--mask); 
+  mask: var(--mask);
+
 }
 @media (max-width: 800px) {
   #info {
@@ -52,6 +60,12 @@ html{
     margin: 0;
     width: 640px;
     height: 289px;
+    --mask: linear-gradient(to bottom, 
+    rgba(0,0,0, 1) 0,   rgba(0,0,0, 1) 70%, 
+    rgba(0,0,0, 0) 95%, rgba(0,0,0, 0) 0
+    ) 100% 90% / 100% 100% repeat-x;
+    -webkit-mask: var(--mask); 
+    mask: var(--mask);
   }
   #unison_box{
     top: 15px;
@@ -155,6 +169,7 @@ html{
 .infobox{
   visibility: hidden;
 }
+
 /* 
 #urge{
   position: absolute;
@@ -174,7 +189,7 @@ html{
 /* NAV STUFF */
 #navgott{
   transition: top 0.3s;
-  animation: fadeIn 4.6s ease-in-out;
+  animation: fadeIn 2.6s ease-in-out;
 }
 
 #nav-collapsed{
@@ -242,6 +257,7 @@ padding: 41px !important;
   bottom: 0;
   height: 50px;
   padding: 0%;
+  animation: fadeIn 2.6s ease-in-out;
 }
 
 #foot{

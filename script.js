@@ -51,19 +51,19 @@ setTimeout(function(){
 	$('#card2')
 		.transition('fade up')
 	;
-}, 2950);
+}, 1950);
 // FADEINS
 setTimeout(function(){
 	$('#card3')
 		.transition('fade up')
 	;
-}, 3550);
+}, 2450);
 // FADEINS
 setTimeout(function(){
 	$('#card4')
 		.transition('fade up')
 	;
-}, 4050);
+}, 2950);
 // setTimeout(function(){
 // 	$('#urge')
 // 		.transition('fade down')
